@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentally — The Rivals Script</title>
+<meta name="description" content="Mentally: the premium Rivals script for Roblox. One price, 8 €, instant delivery.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mentally — The Rivals Script">
+<meta property="og:description" content="The premium Rivals script. 8 €, instant delivery.">
+<meta property="og:image" content="https://mentally.lol/assets/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mentally — The Rivals Script">
+<meta name="twitter:description" content="The premium Rivals script. 8 €, instant delivery.">
+<meta name="twitter:image" content="https://mentally.lol/assets/logo.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video class="site-bg-video" autoplay muted loop playsinline preload="auto" poster="assets/background-poster.jpg" aria-hidden="true">
+  <source src="assets/background.mp4" type="video/mp4">
+</video>
+<div class="site-bg-tint"></div>
+<div class="bg-fx"></div>
+<div class="grain"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header>
+  <nav class="nav-pill">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Mentally">
+      <span class="wordmark" data-fx="decrypt-hover">mentally<em>.lol</em></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" data-fx="decrypt-hover">Home</a>
+      <a href="#product" data-fx="decrypt-hover">Product</a>
+      <a href="#reviews" data-fx="decrypt-hover">Reviews</a>
+      <a href="#faq" data-fx="decrypt-hover">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="buy/index.html" class="btn btn-primary btn-sm">Get Mentally · 8 €<span class="cursor-glow"></span></a>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="#product">Rivals script</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="buy/index.html">Buy — 8 €</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <div class="wrap hero">
+    <div class="hero-copy">
+      <h1 class="hero-title">
+        <span class="hero-line" data-fx="split" data-fx-start="load">Play on another</span>
+        <span class="hero-line"><span class="rotator" data-words="level|league|plane"><span class="rotator-word chrome">level</span></span><span class="hero-dot">.</span></span>
+      </h1>
+      <p class="lede" data-fx="blur" data-fx-start="load" data-fx-delay="0.4">The premium script for Rivals, built to last. Instant delivery, constant updates and real support, for one simple price.</p>
+      <div class="hero-actions">
+        <a href="buy/index.html" class="btn btn-primary btn-lg">Get Mentally <span class="price">8 €</span><span class="cursor-glow"></span></a>
+        <a href="#how" class="btn btn-ghost btn-lg">How it works</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="glow"></div>
+      <div class="logo3d" id="logo3d">
+        <div class="logo3d-stage">
+          <img class="logo3d-shadow" src="assets/logo-depth.png" alt="" aria-hidden="true">
+          <div class="logo3d-depth" aria-hidden="true"></div>
+          <img class="logo3d-face" src="assets/logo.png" alt="Mentally logo">
+          <canvas class="logo3d-shine" aria-hidden="true"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ WHY ============ -->
+  <section id="why">
+    <div class="wrap">
+      <h2 class="section-title" data-fx="split">Built different, priced simple.</h2>
+      <div class="why">
+        <div class="why-item spotlight-card reveal">
+          <svg class="why-icon" viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h4>Instant delivery</h4>
+          <p>Checkout and you're in. Your key is generated automatically.</p>
+        </div>
+        <div class="why-item spotlight-card reveal">
+          <svg class="why-icon" viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 3.8 8.4 9 10 5.2-1.6 9-5 9-10V6l-9-4z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h4>Always up to date</h4>
+          <p>Fixes ship fast whenever Rivals updates.</p>
+        </div>
+        <div class="why-item spotlight-card reveal">
+          <svg class="why-icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h4>Real support</h4>
+          <p>Real people answer your questions, not a bot.</p>
+        </div>
+        <div class="why-item spotlight-card reveal">
+          <svg class="why-icon" viewBox="0 0 24 24"><path d="M4 4v16h16M9 16l3-5 3 3 4-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h4>One price</h4>
+          <p>8 € for the full Rivals script. No upsells.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how">
+    <div class="wrap">
+      <h2 class="section-title" data-fx="split">In-game in a minute.</h2>
+      <ol class="steps">
+        <li class="step spotlight-card reveal"><span class="step-n">01</span><div><h4>Pay 8 €</h4><p>One payment, with the method you prefer.</p></div></li>
+        <li class="step spotlight-card reveal"><span class="step-n">02</span><div><h4>Get your key</h4><p>Delivered automatically, right after payment.</p></div></li>
+        <li class="step spotlight-card reveal"><span class="step-n">03</span><div><h4>Play</h4><p>Run the loader, enter your key, you're in.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT ============ -->
+  <section id="product">
+    <div class="wrap">
+      <div class="product reveal">
+        <div>
+          <h3 data-fx="split">Mentally for Rivals</h3>
+          <p data-fx="blur">Everything you need in Rivals, in one script: a complete feature set, a clean menu, fast updates and priority support.</p>
+          <ul class="feature-list">
+            <li>Full feature set</li>
+            <li>Clean, readable menu</li>
+            <li>Fast updates</li>
+            <li>Priority support</li>
+            <li>High-end executors</li>
+            <li>Instant key</li>
+          </ul>
+        </div>
+        <div class="price-card spotlight-card">
+          <div class="amount"><span data-fx="count" data-to="8" data-duration="1.2">8</span><small>€</small></div>
+          <p class="price-sub">One payment. Everything included.</p>
+          <a href="buy/index.html" class="btn btn-primary btn-block btn-lg">Buy Mentally<span class="cursor-glow"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section id="reviews">
+    <div class="wrap">
+      <h2 class="section-title" data-fx="split">What people are saying</h2>
+      <div class="reviews-carousel">
+        <button class="rev-arrow rev-prev" id="revPrev" aria-label="Previous reviews" type="button">
+          <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="reviews-viewport" id="reviewsViewport">
+          <!-- Les avis ci-dessous sont des exemples à remplacer par de vrais retours. -->
+          <div class="reviews-track" id="reviewsTrack">
+            <div class="review-card" data-name="Oliver"><p>Great service and the install was quick and easy.</p></div>
+            <div class="review-card" data-name="Nova"><p>Had an issue with my key and got a replacement right away. Support was fast.</p></div>
+            <div class="review-card" data-name="Kit"><p>Best script I've used. Packed with features and everything feels smooth.</p></div>
+            <div class="review-card" data-name="Vibs"><p>Had a payment issue, support fixed it fast and delivery was instant.</p></div>
+            <div class="review-card" data-name="Endless"><p>Beats every other script I've tried, and the support is amazing too.</p></div>
+            <div class="review-card" data-name="Tommy"><p>One of the best scripts out there. I'd definitely recommend it.</p></div>
+            <div class="review-card" data-name="Rackz"><p>The menu is clean without cluttering the screen, and everything just works.</p></div>
+            <div class="review-card" data-name="Mara"><p>8 € for all of this is honestly a steal. Updates come fast.</p></div>
+          </div>
+        </div>
+        <button class="rev-arrow rev-next" id="revNext" aria-label="Next reviews" type="button">
+          <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <div class="wrap faq-wrap">
+      <div class="faq-intro">
+        <h2 class="section-title" data-fx="split">Questions people ask</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" type="button">What game is it for?<span class="plus"></span></button>
+          <div class="faq-a"><p>Rivals on Roblox. Mentally is built specifically for Rivals.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">How fast do I get access?<span class="plus"></span></button>
+          <div class="faq-a"><p>Instantly. Your key is generated automatically the moment payment goes through.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">How much does it cost?<span class="plus"></span></button>
+          <div class="faq-a"><p>8 €, one time. Updates and support are included. There is no other plan.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">What executors are supported?<span class="plus"></span></button>
+          <div class="faq-a"><p>Any high-end executor works. If you're unsure about yours, ask support before buying.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">Can I get help if something doesn't work?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes. Real people handle support and will walk you through setup or troubleshooting.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button">Do you offer refunds?<span class="plus"></span></button>
+          <div class="faq-a"><p>Sales are final once delivered, except when something is wrong on our end. See the <a href="refund/index.html">refund policy</a>.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section>
+    <div class="wrap">
+      <div class="cta reveal">
+        <h2 data-fx="split">Get Mentally for <span class="chrome-static">8 €</span>.</h2>
+        <a href="buy/index.html" class="btn btn-primary btn-lg">Buy now<span class="cursor-glow"></span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <a href="index.html" class="brand"><img src="assets/logo.png" alt="Mentally"><span class="wordmark">mentally<em>.lol</em></span></a>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="buy/index.html">Buy</a>
+      <a href="terms/index.html">Terms</a>
+      <a href="privacy/index.html">Privacy</a>
+      <a href="refund/index.html">Refunds</a>
+    </nav>
+    <span class="footer-copy">© 2026 Mentally</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="fx.js"></script>
+<script src="assets/logo-shape.js"></script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module" src="logo3d.js"></script>
+</body>
+</html>
