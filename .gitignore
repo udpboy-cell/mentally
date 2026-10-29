@@ -1,1 +1,4 @@
 assets/source/
+
+.vercel
+.env*
